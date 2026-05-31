@@ -1,7 +1,7 @@
 import axios from "axios";
 
 export const api = axios.create({
-  baseURL: "",
+  baseURL: "https://expense-tracker-backend-e6x6.onrender.com",
   withCredentials: true,
 });
 
@@ -12,7 +12,7 @@ export const authService = {
   config: () => api.get("/auth/config"),
   updatePreferences: (payload) => api.patch("/auth/preferences", payload),
   logout: () => api.post("/auth/logout"),
-  googleUrl: () => "/auth/google",
+  googleUrl: () => "https://expense-tracker-backend-e6x6.onrender.com/auth/google",
 };
 
 export const expenseService = {
