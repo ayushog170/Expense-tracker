@@ -1,0 +1,134 @@
+
+> expense-tracker-unified@1.0.0 dev
+> concurrently "npm run server" "npm run client"
+
+(node:2148) [DEP0060] DeprecationWarning: The `util._extend` API is deprecated. Please use Object.assign() instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[0] 
+[0] > expense-tracker-unified@1.0.0 server
+[0] > nodemon app/server.js
+[0] 
+[1] 
+[1] > expense-tracker-unified@1.0.0 client
+[1] > npm --prefix client run dev
+[1] 
+[0] [33m[nodemon] 3.1.14[39m
+[0] [33m[nodemon] to restart at any time, enter `rs`[39m
+[0] [33m[nodemon] watching path(s): app\**\*[39m
+[0] [33m[nodemon] watching extensions: js,json[39m
+[0] [32m[nodemon] starting `node app/server.js`[39m
+[1] 
+[1] > expense-tracker-client@1.0.0 dev
+[1] > vite --open /auth
+[1] 
+[1] 
+[1]   [32m[1mVITE[22m v5.4.21[39m  [2mready in [0m[1m381[22m[2m[0m ms[22m
+[1] 
+[1]   [32m➜[39m  [1mLocal[22m:   [36mhttp://localhost:[1m5173[22m/[39m
+[1] [2m  [32m➜[39m  [1mNetwork[22m[2m: use [22m[1m--host[22m[2m to expose[22m
+[1] [2m5:02:00 pm[22m [31m[1m[vite][22m[39m [31mhttp proxy error: /auth/config[39m
+[1] AggregateError [ECONNREFUSED]: 
+[1]     at internalConnectMultiple (node:net:1142:49)
+[1]     at afterConnectMultiple (node:net:1723:7)
+[1] [2m5:02:00 pm[22m [31m[1m[vite][22m[39m [31mhttp proxy error: /auth/me[39m
+[1] AggregateError [ECONNREFUSED]: 
+[1]     at internalConnectMultiple (node:net:1142:49)
+[1]     at afterConnectMultiple (node:net:1723:7)
+[1] [2m5:02:00 pm[22m [31m[1m[vite][22m[39m [31mhttp proxy error: /auth/config[39m
+[1] AggregateError [ECONNREFUSED]: 
+[1]     at internalConnectMultiple (node:net:1142:49)
+[1]     at afterConnectMultiple (node:net:1723:7)
+[1] [2m5:02:00 pm[22m [31m[1m[vite][22m[39m [31mhttp proxy error: /auth/me[39m
+[1] AggregateError [ECONNREFUSED]: 
+[1]     at internalConnectMultiple (node:net:1142:49)
+[1]     at afterConnectMultiple (node:net:1723:7)
+[0] Database connection failed: connect ECONNREFUSED 127.0.0.1:27017
+[0] Falling back to in-memory store for demo mode.
+[0] Server running on http://localhost:5000 (memory mode)
+[0] [32m[nodemon] restarting due to changes...[39m
+[0] [32m[nodemon] starting `node app/server.js`[39m
+[0] [32m[nodemon] restarting due to changes...[39m
+[0] [32m[nodemon] starting `node app/server.js`[39m
+[0] [32m[nodemon] restarting due to changes...[39m
+[0] [32m[nodemon] starting `node app/server.js`[39m
+[1] [2m5:08:10 pm[22m [36m[1m[vite][22m[39m [32mvite.config.js changed, restarting server...[39m
+[1] [2m5:08:10 pm[22m [36m[1m[vite][22m[39m server restarted.
+[1] [2m5:08:11 pm[22m [31m[1m[vite][22m[39m [31mhttp proxy error: /auth/me[39m
+[1] AggregateError [ECONNREFUSED]: 
+[1]     at internalConnectMultiple (node:net:1142:49)
+[1]     at afterConnectMultiple (node:net:1723:7)
+[1] [2m5:08:11 pm[22m [31m[1m[vite][22m[39m [31mhttp proxy error: /auth/me[39m
+[1] AggregateError [ECONNREFUSED]: 
+[1]     at internalConnectMultiple (node:net:1142:49)
+[1]     at afterConnectMultiple (node:net:1723:7)
+[1] [2m5:08:11 pm[22m [31m[1m[vite][22m[39m [31mhttp proxy error: /auth/config[39m
+[1] AggregateError [ECONNREFUSED]: 
+[1]     at internalConnectMultiple (node:net:1142:49)
+[1]     at afterConnectMultiple (node:net:1723:7)
+[1] [2m5:08:11 pm[22m [31m[1m[vite][22m[39m [31mhttp proxy error: /auth/config[39m
+[1] AggregateError [ECONNREFUSED]: 
+[1]     at internalConnectMultiple (node:net:1142:49)
+[1]     at afterConnectMultiple (node:net:1723:7)
+[0] [32m[nodemon] restarting due to changes...[39m
+[0] [32m[nodemon] starting `node app/server.js`[39m
+[1] [2m5:08:31 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/styles/index.css, /src/context/AuthContext.jsx, /src/pages/Dashboard.jsx, /src/pages/HomePage.jsx, /src/pages/AuthPage.jsx, /src/components/ExpenseForm.jsx[22m
+[1] [2m5:08:31 pm[22m [36m[1m[vite][22m[39m [33mhmr invalidate [39m[2m/src/context/AuthContext.jsx[22m Could not Fast Refresh ("useAuth" export is incompatible). Learn more at https://github.com/vitejs/vite-plugin-react/tree/main/packages/plugin-react#consistent-components-exports
+[1] [2m5:08:31 pm[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/context/AuthContext.jsx[22m
+[1] [2m5:08:31 pm[22m [31m[1m[vite][22m[39m [31mhttp proxy error: /auth/config[39m
+[1] AggregateError [ECONNREFUSED]: 
+[1]     at internalConnectMultiple (node:net:1142:49)
+[1]     at afterConnectMultiple (node:net:1723:7)
+[1] [2m5:08:31 pm[22m [31m[1m[vite][22m[39m [31mhttp proxy error: /auth/me[39m
+[1] AggregateError [ECONNREFUSED]: 
+[1]     at internalConnectMultiple (node:net:1142:49)
+[1]     at afterConnectMultiple (node:net:1723:7)
+[1] [2m5:08:31 pm[22m [31m[1m[vite][22m[39m [31mhttp proxy error: /auth/config[39m
+[1] AggregateError [ECONNREFUSED]: 
+[1]     at internalConnectMultiple (node:net:1142:49)
+[1]     at afterConnectMultiple (node:net:1723:7)
+[1] [2m5:08:32 pm[22m [31m[1m[vite][22m[39m [31mhttp proxy error: /auth/config[39m
+[1] AggregateError [ECONNREFUSED]: 
+[1]     at internalConnectMultiple (node:net:1142:49)
+[1]     at afterConnectMultiple (node:net:1723:7)
+[1] [2m5:08:32 pm[22m [31m[1m[vite][22m[39m [31mhttp proxy error: /auth/me[39m
+[1] AggregateError [ECONNREFUSED]: 
+[1]     at internalConnectMultiple (node:net:1142:49)
+[1]     at afterConnectMultiple (node:net:1723:7)
+[1] [2m5:08:32 pm[22m [31m[1m[vite][22m[39m [31mhttp proxy error: /auth/config[39m
+[1] AggregateError [ECONNREFUSED]: 
+[1]     at internalConnectMultiple (node:net:1142:49)
+[1]     at afterConnectMultiple (node:net:1723:7)
+[1] [2m5:08:32 pm[22m [31m[1m[vite][22m[39m [31mhttp proxy error: /auth/me[39m
+[1] AggregateError [ECONNREFUSED]: 
+[1]     at internalConnectMultiple (node:net:1142:49)
+[1]     at afterConnectMultiple (node:net:1723:7)
+[1] [2m5:08:38 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/context/AuthContext.jsx, /src/styles/index.css[22m
+[1] [2m5:08:39 pm[22m [36m[1m[vite][22m[39m [33mhmr invalidate [39m[2m/src/context/AuthContext.jsx[22m Could not Fast Refresh ("useAuth" export is incompatible). Learn more at https://github.com/vitejs/vite-plugin-react/tree/main/packages/plugin-react#consistent-components-exports
+[1] [2m5:08:39 pm[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/context/AuthContext.jsx[22m
+[1] [2m5:08:40 pm[22m [31m[1m[vite][22m[39m [31mhttp proxy error: /auth/config[39m
+[1] AggregateError [ECONNREFUSED]: 
+[1]     at internalConnectMultiple (node:net:1142:49)
+[1]     at afterConnectMultiple (node:net:1723:7)
+[1] [2m5:08:40 pm[22m [31m[1m[vite][22m[39m [31mhttp proxy error: /auth/me[39m
+[1] AggregateError [ECONNREFUSED]: 
+[1]     at internalConnectMultiple (node:net:1142:49)
+[1]     at afterConnectMultiple (node:net:1723:7)
+[1] [2m5:08:40 pm[22m [31m[1m[vite][22m[39m [31mhttp proxy error: /auth/config[39m
+[1] AggregateError [ECONNREFUSED]: 
+[1]     at internalConnectMultiple (node:net:1142:49)
+[1]     at afterConnectMultiple (node:net:1723:7)
+[1] [2m5:08:40 pm[22m [31m[1m[vite][22m[39m [31mhttp proxy error: /auth/me[39m
+[1] AggregateError [ECONNREFUSED]: 
+[1]     at internalConnectMultiple (node:net:1142:49)
+[1]     at afterConnectMultiple (node:net:1723:7)
+[1] [2m5:08:52 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/ExpenseForm.jsx, /src/styles/index.css[22m
+[0] Database connection failed: connect ECONNREFUSED 127.0.0.1:27017
+[0] Falling back to in-memory store for demo mode.
+[0] Server running on http://localhost:5000 (memory mode)
+[1] [2m5:09:16 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Dashboard.jsx, /src/styles/index.css[22m
+[1] [2m5:17:06 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/ContactUs.jsx, /src/styles/index.css[22m
+[1] [2m5:47:29 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/ExpenseTable.jsx, /src/styles/index.css[22m
+[1] [2m5:47:29 pm[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/main.jsx[22m
+[1] [2m5:47:30 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/App.jsx, /src/styles/index.css[22m
+[0] npm run server exited with code 1073807364
+[1] npm run client exited with code 1073807364
