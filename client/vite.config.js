@@ -5,10 +5,10 @@ export default defineConfig({
   plugins: [react()],
   server: {
     proxy: {
-      "^/auth/(google|me|logout|login|signup|config|preferences)": "http://localhost:5000",
-      "/expenses": "http://localhost:5000",
-      "/summary": "http://localhost:5000",
-      "/predict-category": "http://localhost:5000",
+      "^/auth/(google|me|logout|login|signup|config|preferences)": "https://expense-tracker-82l2.onrender.com",
+      "/expenses": "https://expense-tracker-82l2.onrender.com",
+      "/summary": "https://expense-tracker-82l2.onrender.com",
+      "/predict-category": "https://expense-tracker-82l2.onrender.com",
     },
   },
 });
