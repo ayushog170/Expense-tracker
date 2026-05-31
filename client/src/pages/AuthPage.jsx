@@ -26,16 +26,18 @@ function AuthPage({ callback = false }) {
   }, [darkMode]);
 
   useEffect(() => {
-    if (!callback) return;
+  if (!callback) return;
 
-refreshUser().then((currentUser) => {
-  console.log("CURRENT USER:", currentUser);
+  console.log("CALLBACK PAGE LOADED");
 
-  navigate(currentUser ? "/home" : "/auth", {
-    replace: true,
+  refreshUser().then((currentUser) => {
+    console.log("CURRENT USER:", currentUser);
+
+    navigate(currentUser ? "/home" : "/auth", {
+      replace: true,
+    });
   });
-});
-  }, [callback, navigate, refreshUser]);
+}, [callback, navigate, refreshUser]);
 
   useEffect(() => {
     if (callback) return;
