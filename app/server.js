@@ -1,5 +1,5 @@
-const express = require("express");
 const cors = require("cors");
+const express = require("express");
 const path = require("path");
 const dotenv = require("dotenv");
 const mongoose = require("mongoose");
@@ -14,7 +14,7 @@ dotenv.config({ path: path.join(__dirname, ".env") });
 const app = express();
 
 app.use(cors({
-  origin: process.env.CLIENT_URL,
+  origin: "https://expense-tracker-frontend-8sq2.onrender.com",
   credentials: true,
 }));
 
