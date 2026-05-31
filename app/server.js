@@ -1,4 +1,5 @@
 const express = require("express");
+const cors = require("cors");
 const path = require("path");
 const dotenv = require("dotenv");
 const mongoose = require("mongoose");
@@ -11,6 +12,12 @@ const requireAuth = require("./middleware/authMiddleware");
 dotenv.config({ path: path.join(__dirname, ".env") });
 
 const app = express();
+
+app.use(cors({
+  origin: process.env.CLIENT_URL,
+  credentials: true,
+}));
+
 app.use(express.json());
 
 app.use("/auth", authRoutes);
