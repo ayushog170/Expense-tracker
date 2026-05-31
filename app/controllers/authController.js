@@ -19,9 +19,9 @@ function cookieOptions(extra = []) {
   return [
     "Path=/",
     "HttpOnly",
-    "SameSite=Lax",
+    "SameSite=None",
     `Max-Age=${cookieMaxAgeSeconds}`,
-    isProduction ? "Secure" : "",
+    "Secure",
     ...extra,
   ].filter(Boolean);
 }
