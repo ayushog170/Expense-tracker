@@ -27,9 +27,14 @@ function AuthPage({ callback = false }) {
 
   useEffect(() => {
     if (!callback) return;
-    refreshUser().then((currentUser) => {
-      navigate(currentUser ? "/home" : "/auth", { replace: true });
-    });
+
+refreshUser().then((currentUser) => {
+  console.log("CURRENT USER:", currentUser);
+
+  navigate(currentUser ? "/home" : "/auth", {
+    replace: true,
+  });
+});
   }, [callback, navigate, refreshUser]);
 
   useEffect(() => {
